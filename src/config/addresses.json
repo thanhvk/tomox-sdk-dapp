@@ -1,0 +1,21 @@
+{
+  "tokens": {
+    "0x1c4112E6DC81A722e824223a7d114AddCb8fb4Ce": {
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "decimals": 8,
+      "makeFee": "1",
+      "takeFee": "2"
+    },
+    "0x0000000000000000000000000000000000000001": {
+      "name": "Tomochain",
+      "symbol": "TOMO",
+      "decimals": 18,
+      "makeFee": "1",
+      "takeFee": "2"
+    }
+  },
+  "pairs": [
+    "BTC/TOMO"
+  ]
+}

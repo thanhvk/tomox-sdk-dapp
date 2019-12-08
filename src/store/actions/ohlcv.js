@@ -1,0 +1,44 @@
+// @flow
+const actionTypes = {
+  saveData: 'ohlcv/SAVE_DATA',
+  saveDuration: 'ohlcv/SAVE_DURATION',
+  saveTimeSpan: 'ohlcv/SAVE_TIME_SPAN',
+  saveNoOfCandles: 'ohlcv/SAVE_NO_OF_CANDLES',
+  resetOHLCVData: 'ohlcv/SAVE_OHLCV_DATA',
+}
+
+export function saveData(data: Array<Object>) {
+  return {
+    type: actionTypes.saveData,
+    payload: { data },
+  }
+}
+
+export function saveDuration(data: Object) {
+  return {
+    type: actionTypes.saveDuration,
+    payload: { data },
+  }
+}
+
+export function saveNoOfCandles(data: number) {
+  return {
+    type: actionTypes.saveNoOfCandles,
+    payload: data,
+  }
+}
+
+export function saveTimeSpan(data: Object) {
+  return {
+    type: actionTypes.saveTimeSpan,
+    payload: { data },
+  }
+}
+
+export function resetOHLCVData() {
+  return {
+    type: actionTypes.resetOHLCVData,
+  }
+}
+
+export default actionTypes
