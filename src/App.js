@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, View } from 'react-native'
-import { createAppContainer } from 'react-navigation'
-import { createBottomTabNavigator } from 'react-navigation-tabs'
+import { NavigationContainer } from '@react-navigation/native'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Provider } from 'react-redux'
 
 import configureStore from './store/configureStore'
@@ -15,28 +15,26 @@ import TradeScreen from './screens/TradeScreen'
 import FundsScreen from './screens/FundsScreen'
 import AccountScreen from './screens/AccountScreen'
 
-const AppNavigator = createBottomTabNavigator({
-  Markets: {
-    screen: MarketsScreen,
-  },
-  Trade: {
-    screen: TradeScreen,
-  },
-  Funds: {
-    screen: FundsScreen,
-  },
-  Account: {
-    screen: AccountScreen,
-  },
-})
-
-const AppContainer = createAppContainer(AppNavigator)
+const Tab = createBottomTabNavigator()
 
 const Loading = _ => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
     <Text>Loading...</Text>
   </View>
 )
+
+function AppContent() {
+  return (
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name="Markets" component={MarketsScreen} />
+        <Tab.Screen name="Trade" component={TradeScreen} />
+        <Tab.Screen name="Funds" component={FundsScreen} />
+        <Tab.Screen name="Account" component={AccountScreen} />
+      </Tab.Navigator>
+    </NavigationContainer>
+  );
+}
 
 class App extends React.PureComponent {
 
@@ -63,7 +61,7 @@ class App extends React.PureComponent {
         return (
             <Provider store={store}>
                 <SocketController>
-                    <AppContainer />
+                    <AppContent />
                 </SocketController>
             </Provider>
         )
