@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, Dimensions } from 'react-native'
-import { TabView } from 'react-native-tab-view'
+import { TabView, TabBar } from 'react-native-tab-view'
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 import styled from 'styled-components'
 import { H1, P, Button } from '../../components/Common'
@@ -10,6 +10,14 @@ const COLUMNS_WIDTH = ['40%', '40%', '20%']
 const getTextChange = (change) => change > 0 ? `+${change}%` : change < 0 ? `${change}%` : '0%'
 
 const getStatusChange = (change) => change > 0 ? 'up' : change < 0 ? 'down' : ''
+
+const renderTabBar = (props) => (
+  <TabBar
+    {...props}
+    indicatorStyle={{ backgroundColor: '#fff' }}
+    style={{ backgroundColor: '#252C40' }}
+  /> 
+)
 
 const getRoutes = titles => {
   let routes = []
@@ -74,6 +82,7 @@ export default class MarketsScreen extends React.PureComponent {
     return (
       <StyledTabView
         navigationState={this.state}
+        renderTabBar={renderTabBar}
         renderScene={renderScene}
         onIndexChange={index => this.setState({ index })}
         initialLayout={{ width: Dimensions.get('window').width }}
