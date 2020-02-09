@@ -3,6 +3,7 @@ import { Text, View } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Provider } from 'react-redux'
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 import configureStore from './store/configureStore'
 import SocketController from './components/SocketController'
@@ -26,9 +27,44 @@ const Loading = _ => (
 function AppContent() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator
+        screenOptions={({ route }) => ({
+          tabBarIcon: ({ focused, color, size }) => {
+            let iconName
+
+            switch (route.name) {
+              case 'Markets':
+                iconName = 'poll-box'
+                break
+              case 'Trades':
+                iconName = 'code-not-equal-variant'
+                break
+              case 'Funds':
+                iconName = 'wallet'
+                break
+              default:
+                iconName = 'account'
+            }
+            
+            return <Icon name={iconName} color={color} size={25 } />
+          },
+        })}
+        tabBarOptions={{
+          activeTintColor: '#ff9a4d',
+          inactiveTintColor: '#6e7793',
+          style: {
+            borderTopWidth: 0,
+            height: 90,
+          },
+          tabStyle: {
+            paddingTop: 7,
+            paddingBottom: 10,
+            backgroundColor: '#252C40',
+          }
+        }}
+      >
         <Tab.Screen name="Markets" component={MarketsScreen} />
-        <Tab.Screen name="Trade" component={TradeScreen} />
+        <Tab.Screen name="Trades" component={TradeScreen} />
         <Tab.Screen name="Funds" component={FundsScreen} />
         <Tab.Screen name="Account" component={AccountScreen} />
       </Tab.Navigator>
