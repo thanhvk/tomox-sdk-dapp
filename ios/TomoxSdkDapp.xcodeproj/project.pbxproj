@@ -17,18 +17,18 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* TomoxSdkDappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TomoxSdkDappTests.m */; };
+		4DEE75E30C544C9DA516F0AA /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C149D065B24EA787F41D9F /* Ubuntu-Light.ttf */; };
+		5F95E6AC43B64A4AB4B7D5D7 /* Ubuntu-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4ED9A35B1BC4CED91836FB0 /* Ubuntu-MediumItalic.ttf */; };
 		7A3CC2D2FD067002099985A5 /* libPods-TomoxSdkDapp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F18D9874D4902EF70F3D87D /* libPods-TomoxSdkDapp-tvOSTests.a */; };
+		7E7AE1BAFA1C4DD4A27322F5 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39FBBE924416446B8AF39391 /* Ubuntu-Regular.ttf */; };
+		A780A41DFFF04AFA8171ECF5 /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8966F6FE36B04CD59F773E96 /* Ubuntu-BoldItalic.ttf */; };
 		A903138C123B64411A79817B /* libPods-TomoxSdkDapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 328D58860536F5304DE4517A /* libPods-TomoxSdkDapp.a */; };
 		B14F035EC59A5FB69D924204 /* libPods-TomoxSdkDappTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FCF0C9C8BFB451D24628C9 /* libPods-TomoxSdkDappTests.a */; };
 		DEDA6EA8EBE34DDDB0C66DA1 /* sf-pro-text-regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = DAB3E974030E4A6E84C61EB5 /* sf-pro-text-regular.woff */; };
-		F872B682CB714476B0DE38E2 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1DB50D1E49E420E8FC9A7A9 /* Ubuntu-Bold.ttf */; };
-		A780A41DFFF04AFA8171ECF5 /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8966F6FE36B04CD59F773E96 /* Ubuntu-BoldItalic.ttf */; };
-		FF85C6DF2F254F6DBA5849A7 /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F810A0A31CEB407AA2229C9A /* Ubuntu-Italic.ttf */; };
-		4DEE75E30C544C9DA516F0AA /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C149D065B24EA787F41D9F /* Ubuntu-Light.ttf */; };
-		F5A6CC6166C2437B8E10694E /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DB65D585BB7438595B360A4 /* Ubuntu-LightItalic.ttf */; };
 		E6F8B9A520D94196A24E08B3 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBA47374B5444BD396F066EC /* Ubuntu-Medium.ttf */; };
-		5F95E6AC43B64A4AB4B7D5D7 /* Ubuntu-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4ED9A35B1BC4CED91836FB0 /* Ubuntu-MediumItalic.ttf */; };
-		7E7AE1BAFA1C4DD4A27322F5 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39FBBE924416446B8AF39391 /* Ubuntu-Regular.ttf */; };
+		F5A6CC6166C2437B8E10694E /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DB65D585BB7438595B360A4 /* Ubuntu-LightItalic.ttf */; };
+		F872B682CB714476B0DE38E2 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1DB50D1E49E420E8FC9A7A9 /* Ubuntu-Bold.ttf */; };
+		FF85C6DF2F254F6DBA5849A7 /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F810A0A31CEB407AA2229C9A /* Ubuntu-Italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +53,8 @@
 		00E356EE1AD99517003FC87E /* TomoxSdkDappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomoxSdkDappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* TomoxSdkDappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TomoxSdkDappTests.m; sourceTree = "<group>"; };
+		05C149D065B24EA787F41D9F /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Light.ttf"; path = "../src/assets/fonts/Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		0DB65D585BB7438595B360A4 /* Ubuntu-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-LightItalic.ttf"; path = "../src/assets/fonts/Ubuntu-LightItalic.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* TomoxSdkDapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TomoxSdkDapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TomoxSdkDapp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = TomoxSdkDapp/AppDelegate.m; sourceTree = "<group>"; };
@@ -63,28 +65,26 @@
 		2D02E47B1E0B4A5D006451C7 /* TomoxSdkDapp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TomoxSdkDapp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* TomoxSdkDapp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TomoxSdkDapp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		328D58860536F5304DE4517A /* libPods-TomoxSdkDapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TomoxSdkDapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39FBBE924416446B8AF39391 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Regular.ttf"; path = "../src/assets/fonts/Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 		3A5A18BFFEAD63FDA6D472F3 /* Pods-TomoxSdkDapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomoxSdkDapp.debug.xcconfig"; path = "Target Support Files/Pods-TomoxSdkDapp/Pods-TomoxSdkDapp.debug.xcconfig"; sourceTree = "<group>"; };
 		3F008BB47E9B0D12325B58C1 /* Pods-TomoxSdkDapp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomoxSdkDapp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-TomoxSdkDapp-tvOS/Pods-TomoxSdkDapp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3F7642D9B6B22F9952147502 /* Pods-TomoxSdkDappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomoxSdkDappTests.debug.xcconfig"; path = "Target Support Files/Pods-TomoxSdkDappTests/Pods-TomoxSdkDappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		878852119FAAC5FB07209389 /* Pods-TomoxSdkDapp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomoxSdkDapp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-TomoxSdkDapp-tvOS/Pods-TomoxSdkDapp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		8966F6FE36B04CD59F773E96 /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-BoldItalic.ttf"; path = "../src/assets/fonts/Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
 		8B68BA0221FF3CE3FC7975B4 /* Pods-TomoxSdkDappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomoxSdkDappTests.release.xcconfig"; path = "Target Support Files/Pods-TomoxSdkDappTests/Pods-TomoxSdkDappTests.release.xcconfig"; sourceTree = "<group>"; };
 		978F8D6BC2229E54AA9E5C96 /* libPods-TomoxSdkDapp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TomoxSdkDapp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F18D9874D4902EF70F3D87D /* libPods-TomoxSdkDapp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TomoxSdkDapp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B635863C082FA72D0D8A9F71 /* Pods-TomoxSdkDapp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomoxSdkDapp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-TomoxSdkDapp-tvOSTests/Pods-TomoxSdkDapp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CCAAAD2780D50E7E4CEFD726 /* Pods-TomoxSdkDapp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomoxSdkDapp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-TomoxSdkDapp-tvOSTests/Pods-TomoxSdkDapp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		D4FCF0C9C8BFB451D24628C9 /* libPods-TomoxSdkDappTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TomoxSdkDappTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB3E974030E4A6E84C61EB5 /* sf-pro-text-regular.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "sf-pro-text-regular.woff"; path = "../src/assets/fonts/sf-pro-text-regular.woff"; sourceTree = "<group>"; };
+		E1DB50D1E49E420E8FC9A7A9 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Bold.ttf"; path = "../src/assets/fonts/Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		E4ED9A35B1BC4CED91836FB0 /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-MediumItalic.ttf"; path = "../src/assets/fonts/Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; };
+		EBA47374B5444BD396F066EC /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Medium.ttf"; path = "../src/assets/fonts/Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F810A0A31CEB407AA2229C9A /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Ubuntu-Italic.ttf"; path = "../src/assets/fonts/Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
 		FAE54E7C9ADD3764ED86954A /* Pods-TomoxSdkDapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomoxSdkDapp.release.xcconfig"; path = "Target Support Files/Pods-TomoxSdkDapp/Pods-TomoxSdkDapp.release.xcconfig"; sourceTree = "<group>"; };
-		DAB3E974030E4A6E84C61EB5 /* sf-pro-text-regular.woff */ = {isa = PBXFileReference; name = "sf-pro-text-regular.woff"; path = "../src/assets/fonts/sf-pro-text-regular.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E1DB50D1E49E420E8FC9A7A9 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; name = "Ubuntu-Bold.ttf"; path = "../src/assets/fonts/Ubuntu-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8966F6FE36B04CD59F773E96 /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Ubuntu-BoldItalic.ttf"; path = "../src/assets/fonts/Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F810A0A31CEB407AA2229C9A /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; name = "Ubuntu-Italic.ttf"; path = "../src/assets/fonts/Ubuntu-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		05C149D065B24EA787F41D9F /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; name = "Ubuntu-Light.ttf"; path = "../src/assets/fonts/Ubuntu-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0DB65D585BB7438595B360A4 /* Ubuntu-LightItalic.ttf */ = {isa = PBXFileReference; name = "Ubuntu-LightItalic.ttf"; path = "../src/assets/fonts/Ubuntu-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		EBA47374B5444BD396F066EC /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; name = "Ubuntu-Medium.ttf"; path = "../src/assets/fonts/Ubuntu-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E4ED9A35B1BC4CED91836FB0 /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Ubuntu-MediumItalic.ttf"; path = "../src/assets/fonts/Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		39FBBE924416446B8AF39391 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; name = "Ubuntu-Regular.ttf"; path = "../src/assets/fonts/Ubuntu-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,7 +218,7 @@
 			sourceTree = "<group>";
 		};
 		8A03826444B741D8B0705B42 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				DAB3E974030E4A6E84C61EB5 /* sf-pro-text-regular.woff */,
 				E1DB50D1E49E420E8FC9A7A9 /* Ubuntu-Bold.ttf */,
@@ -231,8 +231,8 @@
 				39FBBE924416446B8AF39391 /* Ubuntu-Regular.ttf */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
 			path = "";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -266,6 +266,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				B80CD31E6732B7B70856966A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -496,6 +497,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B80CD31E6732B7B70856966A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TomoxSdkDapp/Pods-TomoxSdkDapp-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TomoxSdkDapp/Pods-TomoxSdkDapp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CE184BDA085852A093B94035 /* [CP] Check Pods Manifest.lock */ = {
