@@ -37,10 +37,6 @@ const getRoutes = titles => {
 }
 
 export default class MarketsScreen extends React.PureComponent {
-  static navigationOptions = {
-    title: 'Markets',
-  };
-
   state = {
     index: 0,
     routes: getRoutes(['Favorites', ...this.props.quoteTokens, 'All']),
