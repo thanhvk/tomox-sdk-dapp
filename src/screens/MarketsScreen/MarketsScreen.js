@@ -14,18 +14,22 @@ const getStatusChange = (change) => change > 0 ? 'up' : change < 0 ? 'down' : ''
 const renderTabBar = (props) => (
   <TabBar
     {...props}
-    indicatorStyle={{ backgroundColor: '#fff' }}
-    style={{ backgroundColor: '#252C40' }}
+    scrollEnabled
+    getLabelText={({ route }) => route.title}
+    tabStyle={{ width: 'auto', paddingLeft: 15, paddingRight: 15 }}
+    activeColor='#ff9a4d'
+    indicatorStyle={{ backgroundColor: '#ff9a4d' }}
+    style={{ backgroundColor: '#252C40', justifyItems: 'space-between' }}
   /> 
 )
 
 const getRoutes = titles => {
-  let routes = []
+  let routes = []  
 
   titles.forEach(title => {
     routes.push({
       key: title.toLowerCase(),
-      title: title,
+      title,
     })
   })
 
@@ -39,7 +43,7 @@ export default class MarketsScreen extends React.PureComponent {
 
   state = {
     index: 0,
-    routes: getRoutes([...this.props.quoteTokens, 'All']),
+    routes: getRoutes(['Favorites', ...this.props.quoteTokens, 'All']),
   }
 
   componentDidMount() {
@@ -94,7 +98,7 @@ export default class MarketsScreen extends React.PureComponent {
 function MarketsTable({ tokenPairs }) {
   return (
     <Container>
-      <Row>
+      <Row border='none'>
         <Header width={COLUMNS_WIDTH[0]}>Pair / Vol</Header>
         <Header width={COLUMNS_WIDTH[1]}>Last Price</Header>
         <Header width={COLUMNS_WIDTH[2]}>24h Chg%</Header>
@@ -141,7 +145,7 @@ const Row = styled(View)`
   padding: 10px 0;
   flex-direction: row;
   align-items: center;
-  border-bottom-width: 1px;
+  border-bottom-width: ${props => props.border !== 'none' ? '1px' : 0};
   border-style: solid;
   border-bottom-color:  #394362;
 ` 
@@ -157,7 +161,7 @@ const Col = styled(View)`
 `
 
 const Header = styled(Text)`
-  color: #fff;
+  color: #6e779f;
   font-family: Ubuntu-Regular;
   width: ${props => props.width ? props.width : '30%'};
 `
