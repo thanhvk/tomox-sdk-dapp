@@ -34,16 +34,16 @@ function AppContent() {
 
             switch (route.name) {
               case 'Markets':
-                iconName = 'poll-box'
+                iconName = 'poll'
                 break
               case 'Trades':
-                iconName = 'code-not-equal-variant'
+                iconName = 'xml'
                 break
               case 'Funds':
-                iconName = 'wallet'
+                iconName = 'wallet-outline'
                 break
               default:
-                iconName = 'account'
+                iconName = 'account-outline'
             }
             
             return <Icon name={iconName} color={color} size={25 } />
@@ -96,9 +96,9 @@ class App extends React.PureComponent {
 
         return (
             <Provider store={store}>
-                <SocketController>
-                    <AppContent />
-                </SocketController>
+              <SocketController>
+                <AppContent />
+              </SocketController>
             </Provider>
         )
     }
