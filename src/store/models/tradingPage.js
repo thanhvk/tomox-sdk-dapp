@@ -1,6 +1,4 @@
 // @flow
-import { push } from 'connected-react-router'
-
 import {
   getTokenPairsDomain,
   getAccountDomain,
@@ -56,11 +54,11 @@ export default function tradingPageSelector(state: State) {
 export const queryTradingPageData = (): ThunkAction => {
   return async (dispatch, getState, { api, socket }) => {
     try {
-      const addresses = JSON.parse(sessionStorage.getItem('addresses'))
-      if (!addresses) throw new Error('Cannot get tokens or pairs')
+      // const addresses = JSON.parse(sessionStorage.getItem('addresses'))
+      // if (!addresses) throw new Error('Cannot get tokens or pairs')
 
       // Unsubscribe socket when change current pair
-      socket.unsubscribeChart()
+      // socket.unsubscribeChart()
       socket.unsubscribeOrderBook()
       socket.unsubscribeTrades()
       socket.unSubscribePrice()
@@ -68,9 +66,8 @@ export const queryTradingPageData = (): ThunkAction => {
       const state = getState()
       const pairDomain = getTokenPairsDomain(state)
       const currentPair = pairDomain.getCurrentPair()
-      let { router: { location: { pathname }}} = state
-      pathname = pathname.includes('dapp') ? 'dapp' : 'trade'
-      dispatch(push(`/${pathname}/${currentPair.pair.replace('/', '-')}`))
+      // let { router: { location: { pathname }}} = state
+      // pathname = pathname.includes('dapp') ? 'dapp' : 'trade'
 
       const pairs = pairDomain.getPairsByCode()
       const accountDomain = getAccountDomain(state)
@@ -97,11 +94,11 @@ export const queryTradingPageData = (): ThunkAction => {
       socket.subscribePrice(currentPair)
       socket.subscribeTrades(currentPair)
       socket.subscribeOrderBook(currentPair)
-      socket.subscribeChart(
-        currentPair,
-        state.ohlcv.currentTimeSpan.label,
-        state.ohlcv.currentDuration.label,
-      )
+      // socket.subscribeChart(
+      //   currentPair,
+      //   state.ohlcv.currentTimeSpan.label,
+      //   state.ohlcv.currentDuration.label,
+      // )
     } catch (e) {
       console.log(e)
       dispatch(notifierActionCreators.addErrorNotification({ message: e.message }))

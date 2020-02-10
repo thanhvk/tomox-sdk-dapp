@@ -12,7 +12,7 @@ import { generateQuotes } from './config/quotes'
 import { generateTokens } from './config/tokens'
 
 import MarketsScreen from './screens/MarketsScreen'
-import TradeScreen from './screens/TradeScreen'
+import TradesScreen from './screens/TradesScreen'
 import FundsScreen from './screens/FundsScreen'
 import AccountScreen from './screens/AccountScreen'
 
@@ -64,7 +64,7 @@ function AppContent() {
         }}
       >
         <Tab.Screen name="Markets" component={MarketsScreen} />
-        <Tab.Screen name="Trades" component={TradeScreen} />
+        <Tab.Screen name="Trades" component={TradesScreen} />
         <Tab.Screen name="Funds" component={FundsScreen} />
         <Tab.Screen name="Account" component={AccountScreen} />
       </Tab.Navigator>
