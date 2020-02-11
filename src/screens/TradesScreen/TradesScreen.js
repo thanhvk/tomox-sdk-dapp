@@ -27,10 +27,12 @@ export default class TradeScreen extends Component {
     const {navigate} = this.props.navigation;
     return (
       <Container>
+        <TokenPair><Text>Token</Text></TokenPair>
+        <Actions><Text>Actions</Text></Actions>
         <Row>
           <Col>
-            <Text>Order place</Text>
-            <Text>Depth chart</Text>
+            <OrderPlace><Text>Order place</Text></OrderPlace>
+            <DepthChart><Text>Depth chart</Text></DepthChart>
           </Col>
           <Col>
             <Orderbook />
@@ -48,10 +50,30 @@ const Container = styled(View)`
 `
 
 const Row = styled(View)`
+  flex: 1;
   flex-direction: row;
 `
 
 const Col = styled(View)`
+  flex: 1;
   flex-direction: column;
   width: 50%;
+`
+
+const TokenPair = styled(View)`
+  height: 50px;
+  justify-content: center;
+`
+
+const Actions = styled(View)`
+  height: 50px;
+  justify-content: center;
+`
+
+const OrderPlace = styled(View)`
+  flex: 1;
+`
+
+const DepthChart = styled(View)`
+  flex: 1;
 `
