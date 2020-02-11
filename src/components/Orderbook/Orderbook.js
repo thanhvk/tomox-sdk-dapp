@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { View, Text } from 'react-native'
 import styled from 'styled-components'
-import { H2, P } from '../Common'
 
 export default function Orderbook(props) {
 
@@ -20,13 +19,15 @@ function OrderbookRenderer({ asks, bids, currentPairData }) {
 
     return (
         <Container>
-            <Row>
+            <Header>
                 <Title>Price</Title>
                 <Title>Amount</Title>
-            </Row>
-            <List type="ask" data={asks} />
-            {currentPairData && <CurrentPrice currentPairData={currentPairData} />}
-            <List type="bid" data={bids} />
+            </Header>
+            <Body>
+                <List type="ask" data={asks} />
+                {currentPairData && <CurrentPrice currentPairData={currentPairData} />}
+                <List type="bid" data={bids} />
+            </Body>
         </Container>
     )
 }
@@ -57,7 +58,7 @@ function CurrentPrice({ currentPairData }) {
 
     return (
         <Centered>
-            <H2>{currentPairData.price}</H2>
+            <Price>{currentPairData.price}</Price>
             <PriceUsd>${currentPairData.priceUsd.toFixed(2)}</PriceUsd>
         </Centered>
     )
@@ -65,23 +66,38 @@ function CurrentPrice({ currentPairData }) {
 
 const Container = styled(View)`
     flex: 1;
+    flex-direction: column;
 `
 
 const ListContainer = styled(View)`
-    height: 300px;
+    flex: 1;
     overflow: hidden;
 `
 
 const Row = styled(View)`
-    padding: 10px 0;
+    padding: 7px 0;
     flex-direction: row;
     justify-content: space-between;
 `
 
+const Header = styled(Row)`
+    height: 40px;
+`
+
+const Body = styled(View)`
+    flex: 1;
+`
+
 const Centered = styled(View)`
+    height: 50px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border-style: solid;
+    border-top-width: 1px;
+    border-top-color: #fff;
+    border-bottom-width: 1px;
+    border-bottom-color: #fff;
 `
 
 const AskPrice = styled(Text)`
@@ -104,6 +120,16 @@ const Title = styled(Text)`
     font-family: Ubuntu-Regular;
 `
 
-const PriceUsd = styled(P)`
+const Price = styled(Text)`
     margin-left: 7px;
+    color: #fff;
+    font-size: 18px;
+    font-family: Ubuntu-Regular;
+`
+
+const PriceUsd = styled(Text)`
+    margin-left: 7px;
+    color: #fff;
+    font-size: 14px;
+    font-family: Ubuntu-Regular;
 `
