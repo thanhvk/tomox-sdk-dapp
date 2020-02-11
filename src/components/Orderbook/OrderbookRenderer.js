@@ -2,20 +2,7 @@ import React from 'react'
 import { View, Text } from 'react-native'
 import styled from 'styled-components'
 
-export default function Orderbook(props) {
-
-    const { asks, bids, currentPairData } = props
-    
-    
-    return (
-        <OrderbookRenderer
-            currentPairData={currentPairData}
-            asks={asks.slice().reverse()}
-            bids={bids.slice()} />
-    )
-}
-
-function OrderbookRenderer({ asks, bids, currentPairData }) {
+export default function OrderbookRenderer({ asks, bids, currentPairData }) {
 
     return (
         <Container>
@@ -139,15 +126,12 @@ const Title = styled(Text)`
 `
 
 const Price = styled(Text)`
-    margin-left: 7px;
     color: #fff;
     font-size: 18px;
     font-family: Ubuntu-Regular;
 `
 
-const PriceUsd = styled(Text)`
+const PriceUsd = styled(Price)`
     margin-left: 7px;
-    color: #fff;
     font-size: 14px;
-    font-family: Ubuntu-Regular;
 `
