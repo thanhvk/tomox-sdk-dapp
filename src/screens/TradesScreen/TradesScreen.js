@@ -38,6 +38,7 @@ export default class TradeScreen extends Component {
             <Orderbook />
           </Col>
         </Row>
+        <TradesHistory><Text>Trades history</Text></TradesHistory>
       </Container>
     );
   }
@@ -45,7 +46,7 @@ export default class TradeScreen extends Component {
 
 const Container = styled(View)`
   flex: 1;
-  background-color: #1f2538;
+  background-color: #191e2f;
   margin-top: ${getStatusBarHeight()}px;
 `
 
@@ -63,11 +64,13 @@ const Col = styled(View)`
 const TokenPair = styled(View)`
   height: 50px;
   justify-content: center;
+  background-color: #252C40;
 `
 
 const Actions = styled(View)`
-  height: 50px;
+  height: 40px;
   justify-content: center;
+  background-color: #1e2438;
 `
 
 const OrderPlace = styled(View)`
@@ -76,4 +79,10 @@ const OrderPlace = styled(View)`
 
 const DepthChart = styled(View)`
   flex: 1;
+`
+
+const TradesHistory = styled(View)`
+  height: 40px;
+  justify-content: center;
+  background-color: #1e2438;
 `

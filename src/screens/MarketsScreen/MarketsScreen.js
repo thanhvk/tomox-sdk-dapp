@@ -129,7 +129,7 @@ function MarketsTable({ tokenPairs }) {
 }
 
 const StyledTabView = styled(TabView)`
-  background-color: #1f2538;
+  background-color: #191e2f;
   margin-top: ${getStatusBarHeight()}px;
 `
 
