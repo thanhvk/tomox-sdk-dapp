@@ -38,7 +38,7 @@ const getRoutes = titles => {
 
 export default class MarketsScreen extends React.PureComponent {
   state = {
-    index: 0,
+    index: 1,
     routes: getRoutes(['Favorites', ...this.props.quoteTokens, 'All']),
   }
 
