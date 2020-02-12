@@ -27,3 +27,8 @@ export const Highlight = styled(Text)`
     color: ${props => props.color ? props.color : '#ff9a4d'};
 `
 
+export const MdText = styled(Text)`
+    color: ${props => props.mute ? '#6e7793' : '#fff'};
+    font-size: 14px;
+`
+
