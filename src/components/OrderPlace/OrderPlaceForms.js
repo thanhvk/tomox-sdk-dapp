@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { View, Text } from 'react-native'
+import React from 'react'
+import { View } from 'react-native'
 import styled from 'styled-components'
 
 import { Container, Input, Button, Select, MdText } from '../Common'
@@ -15,7 +15,7 @@ const ORDER_OPTIONS = [
     }
 ]
 
-export function OrderPlaceBuyForm() {
+export function OrderPlaceForm({ side }) {
 
     return (
         <Container>
@@ -43,40 +43,11 @@ export function OrderPlaceBuyForm() {
                 <MdText>Avbl</MdText>
                 <MdText>--</MdText>
             </Row>
-            <Button type='up' height={40}>Buy</Button>
-        </Container>
-    )
-}
-
-export function OrderPlaceSellForm() {
-
-    return (
-        <Container>
-            <Select value='lo'
-                data={ORDER_OPTIONS} />
-            <Row>
-                <Input 
-                    onChangeText={text => null}
-                    placeholder='Price(TOMO)' />
-            </Row>
-            <Row>
-                <Input 
-                    onChangeText={text => null}
-                    placeholder='Amount(BNB)' />
-            </Row>
-            <Row>
-                <Fractions />
-            </Row>
-            <Row>
-                <Input 
-                    onChangeText={text => null}
-                    placeholder='Total(TOMO)' />
-            </Row>
-            <Row>
-                <MdText>Avbl</MdText>
-                <MdText>--</MdText>
-            </Row>
-            <Button type='down' height={40}>Sell</Button>
+            {
+                (side === 'buy') 
+                ? (<Button type='up' height={40}>Buy</Button>)
+                : (<Button type='down' height={40}>Sell</Button>)
+            }
         </Container>
     )
 }
