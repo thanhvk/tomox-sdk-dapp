@@ -2,8 +2,11 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import { getStatusBarHeight } from 'react-native-status-bar-height'
 import { Text, View } from 'react-native'
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
-import Orderbook from '../../components/Orderbook/'
+import Orderbook from '../../components/Orderbook'
+import OrderPlace from '../../components/OrderPlace'
+import { MdText } from '../../components/Common'
 
 export default class TradeScreen extends Component {
   componentDidMount() {
@@ -28,13 +31,16 @@ export default class TradeScreen extends Component {
     return (
       <Container>
         <TokenPair><Text>Token</Text></TokenPair>
-        <Actions><Text>Actions</Text></Actions>
         <Row>
           <Col>
-            <OrderPlace><Text>Order place</Text></OrderPlace>
+            <OrderPlace />
             <DepthChart><Text>Depth chart</Text></DepthChart>
           </Col>
           <Col>
+            <Actions>
+              <Icon name="clipboard-text-outline" size={20} color="#fff" />
+              <MdText>Open Orders</MdText>
+            </Actions>
             <Orderbook />
           </Col>
         </Row>
@@ -69,12 +75,10 @@ const TokenPair = styled(View)`
 
 const Actions = styled(View)`
   height: 40px;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   background-color: #1e2438;
-`
-
-const OrderPlace = styled(View)`
-  flex: 1;
 `
 
 const DepthChart = styled(View)`
