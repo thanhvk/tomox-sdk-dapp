@@ -66,7 +66,7 @@ function CurrentPrice({ currentPairData }) {
 
 const Container = styled(View)`
     flex: 1;
-    flex-direction: column;
+    padding: 0 10px 0 5px;
 `
 
 const BidsContainer = styled(View)`
@@ -100,7 +100,6 @@ const Centered = styled(View)`
     margin: 15px 0;
     border-style: solid;
     border-color: #394362;
-    border-radius: 1px;
     border-top-width: 1px;
     border-bottom-width: 1px;
 `

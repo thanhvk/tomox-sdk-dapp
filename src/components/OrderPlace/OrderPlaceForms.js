@@ -45,8 +45,8 @@ export function OrderPlaceForm({ side }) {
             </Row>
             {
                 (side === 'buy') 
-                ? (<Button type='up' height={40}>Buy</Button>)
-                : (<Button type='down' height={40}>Sell</Button>)
+                ? (<Button status='up' height={40}>Buy</Button>)
+                : (<Button status='down' height={40}>Sell</Button>)
             }
         </Container>
     )
@@ -69,6 +69,6 @@ const Row = styled(View)`
     justify-content: space-between;
 `
 const Fraction = styled(View)`
-    padding: 0 7px;
+    padding: 0 5px;
     border: 1px solid #394362;
 `

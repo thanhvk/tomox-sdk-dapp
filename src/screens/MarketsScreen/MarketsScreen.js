@@ -109,14 +109,14 @@ function MarketsTable({ tokenPairs }) {
                   <H1>{pair.baseTokenSymbol}</H1>
                   <P mute> / {pair.quoteTokenSymbol}</P>
                 </Pair>
-                <P mute>Vol {pair.volume}</P>
+                <P number mute>Vol {pair.volume}</P>
               </Col>
               <Col width={COLUMNS_WIDTH[1]}>
-                <H1>{pair.lastPrice}</H1>
-                <P mute>${pair.price}</P>
+                <H1 number>{pair.lastPrice}</H1>
+                <P number mute>${pair.price}</P>
               </Col>
               <Col width={COLUMNS_WIDTH[2]}>
-                <Button type={getStatusChange(pair.change)}>
+                <Button number status={getStatusChange(pair.change)}>
                   {getTextChange(pair.change)}
                 </Button>
               </Col>
@@ -158,7 +158,6 @@ const Col = styled(View)`
 
 const Header = styled(Text)`
   color: #6e779f;
-  font-family: Ubuntu-Regular;
   width: ${props => props.width ? props.width : '30%'};
 `
 

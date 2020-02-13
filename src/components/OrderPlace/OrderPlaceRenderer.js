@@ -60,9 +60,7 @@ const TabListWrapper = styled(View)`
     justify-content: space-around; 
 `
 
-const TabItem = styled(View)`
-
-`
+const TabItem = styled(View)``
 
 const TabIndicator = styled(View)`
     width: 100%;
@@ -84,4 +82,5 @@ const TabItemText = styled(Text)`
 
 const TabContent = styled(View)`
     flex: 1;
+    padding: 0 5px 0 10px;
 `
