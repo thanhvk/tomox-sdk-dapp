@@ -4,14 +4,14 @@ import styled from 'styled-components'
 export const P = styled(Text)`
     color: ${props => props.mute ? '#6e7793' : '#fff'};
     font-size: 14px;
-    font-family: 'Ubuntu-Regular';
+    font-family: ${props => props.number ? 'Ubuntu-Regular' : 'Helvetica'};
     margin-bottom: 5px;
 `
 
 export const H1 = styled(Text)`
     color: #fff;
     font-size: 18px;
-    font-family: 'Ubuntu-Regular';
+    font-family: ${props => props.number ? 'Ubuntu-Regular' : 'Helvetica'};
     margin-bottom: 5px;
 `
 
