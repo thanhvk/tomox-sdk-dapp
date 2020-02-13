@@ -14,20 +14,19 @@ const ButtonWrapper = styled(View)`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border-radius: 3px;
-  background-color: ${props => props.type === 'up' ? '#00c38c' : props.type === 'down' ? '#f94d5c' : '#f2f2f2'}
+  background-color: ${props => props.status === 'up' ? '#00c38c' : props.status === 'down' ? '#f94d5c' : '#f2f2f2'}
 `
 
 const ButtonContent = styled(Text)`
   color: ${props => props.color ? props.color : '#fff'};
   font-size: 16px;
-  font-family: Ubuntu-Regular;
+  font-family: ${props => props.number ? 'Ubuntu-Regular' : 'Helvetica'};
 `
 
-export function Button({type, height, color, children}) {
+export function Button({status, number, height, color, children}) {
     return (
-        <ButtonWrapper type={type} height={height}>
-            <ButtonContent color={color}>{children}</ButtonContent>
+        <ButtonWrapper status={status} height={height}>
+            <ButtonContent number={number} color={color}>{children}</ButtonContent>
         </ButtonWrapper>
     )
 }
@@ -46,7 +45,6 @@ const StyledInput = styled(TextInput).attrs({
   font-family: 'Ubuntu';
   height: 40px;
   padding: 10px;
-  border-radius: 3px;
   background: #252C40;
 `
 
