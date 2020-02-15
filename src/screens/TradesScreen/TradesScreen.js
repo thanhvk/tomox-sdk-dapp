@@ -4,9 +4,11 @@ import { getStatusBarHeight } from 'react-native-status-bar-height'
 import { Text, View } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
+import { MdText } from '../../components/Common'
+
 import Orderbook from '../../components/Orderbook'
 import OrderPlace from '../../components/OrderPlace'
-import { MdText } from '../../components/Common'
+import DepthChart from '../../components/DepthChart'
 
 export default class TradeScreen extends Component {
   componentDidMount() {
@@ -34,7 +36,7 @@ export default class TradeScreen extends Component {
         <Row>
           <Col>
             <OrderPlace />
-            <DepthChart><Text>Depth chart</Text></DepthChart>
+            <DepthChart />
           </Col>
           <Col>
             <Actions>
@@ -79,10 +81,6 @@ const Actions = styled(View)`
   justify-content: center;
   align-items: center;
   background-color: #1e2438;
-`
-
-const DepthChart = styled(View)`
-  flex: 1;
 `
 
 const TradesHistory = styled(View)`
