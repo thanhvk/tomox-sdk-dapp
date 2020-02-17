@@ -33,10 +33,10 @@ function DepthChartRenderer({ asks, bids }) {
 
     const Clips = ({ x, width }) => (
         <Defs key={ 'clips' }>
-            <ClipPath id={ 'clip-path-1' } key={ '0' }>
+            <ClipPath id={ 'clip-path-bid' } key={ '0' }>
                 <Rect x={ 0 } y={ '0' } width={ x(indexToBidClipFrom) } height={ '100%' }/>
             </ClipPath>
-            <ClipPath id="clip-path-2" key={ '1' }>
+            <ClipPath id="clip-path-ask" key={ '1' }>
                 <Rect x={ x(idnexToAskClipFrom) } y={ '0' } width={ width - x(idnexToAskClipFrom) } height={ '100%' }/>
             </ClipPath>
         </Defs>
@@ -48,7 +48,7 @@ function DepthChartRenderer({ asks, bids }) {
             d={ line }
             stroke={ '#00c38c' }
             fill={ 'none' }
-            clipPath={ 'url(#clip-path-1)' }
+            clipPath={ 'url(#clip-path-bid)' }
         />
     )
 
@@ -59,7 +59,7 @@ function DepthChartRenderer({ asks, bids }) {
                 stroke={ '#f94d5c' }
                 d={ paths.line}
                 fill={ 'none' }
-                clipPath={ 'url(#clip-path-2)'}
+                clipPath={ 'url(#clip-path-ask)'}
             />
         )
     }
@@ -75,7 +75,7 @@ function DepthChartRenderer({ asks, bids }) {
                     contentInset={{ top: 30, bottom: 30 }}
                     svg={{
                         fill: 'url(#bid-gradient)',
-                        clipPath: 'url(#clip-path-1)',
+                        clipPath: 'url(#clip-path-bid)',
                     }}
                     curve={ shape.curveStep }
                     yAccessor={ ({ item }) => item.total }
@@ -84,8 +84,6 @@ function DepthChartRenderer({ asks, bids }) {
                 >
                     <BidGradient/>
                     <Clips/>
-                    <BidLine/>
-                    <AskLine/>
                 </AreaChart>
 
                 <AreaChart
@@ -94,7 +92,7 @@ function DepthChartRenderer({ asks, bids }) {
                     contentInset={{ top: 30, bottom: 30 }}
                     svg={{
                         fill: 'url(#ask-gradient)',
-                        clipPath: 'url(#clip-path-2)',
+                        clipPath: 'url(#clip-path-ask)',
                     }}
                     curve={ shape.curveStep }
                     yAccessor={ ({ item }) => item.total }
