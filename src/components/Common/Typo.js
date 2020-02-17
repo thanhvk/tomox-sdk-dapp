@@ -32,3 +32,8 @@ export const MdText = styled(Text)`
     font-size: 14px;
 `
 
+export const LgText = styled(Text)`
+    color: ${props => props.mute ? '#6e7793' : '#fff'};
+    font-size: 18px;
+`
+
