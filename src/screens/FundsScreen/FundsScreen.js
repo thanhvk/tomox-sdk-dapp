@@ -1,20 +1,28 @@
-import React, { Component } from 'react';
-import { View, Text, Button } from 'react-native';
+import React, { Component } from 'react'
+import styled from 'styled-components'
+import { getStatusBarHeight } from 'react-native-status-bar-height'
+import { View, Text, Button } from 'react-native'
 
-export default class FundsScreen extends Component {
-  static navigationOptions = {
-    title: 'Funds',
-  };
-  render() {
-    const {navigate} = this.props.navigation;
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Funds screen!</Text>
-        <Button
-          title="Go to trade"
-          onPress={() => navigate('Trade')}
-        />
-      </View>
-    );
-  }
+import { LgText, MdText } from '../../components/Common'
+
+export default function FundsScreen() {
+  
+  return (
+    <Container>
+      <Header><LgText mute>Funds</LgText></Header>
+    </Container>
+  )
 }
+
+const Container = styled(View)`
+  flex: 1;
+  background-color: #191e2f;
+  margin-top: ${getStatusBarHeight()}px;
+`
+
+const Header = styled(View)`
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: #252C40;
+`
